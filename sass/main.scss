@@ -1,0 +1,112 @@
+/*
+Project Name: BN Education Group
+Project URI: 
+Author: Yuriy Chaban
+Author URI: https://github.com/YuriyChaban/
+Description: Элитное образование за рубежом - BN Education Group
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+*/
+
+/*--------------------------------------------------------------
+# Compass reset
+--------------------------------------------------------------*/
+@import "compass/reset";
+
+/*--------------------------------------------------------------
+# scss files
+--------------------------------------------------------------*/
+@import "variables";
+@import "mixins";
+	/*--------------------------------------------------------------
+	# fonts
+	--------------------------------------------------------------*/
+	@import "fonts";
+	/*--------------------------------------------------------------
+	# header
+	--------------------------------------------------------------*/
+	@import "header";
+	/*--------------------------------------------------------------
+	# home page
+	--------------------------------------------------------------*/
+	@import "home-page";
+	/*-----------------------------
+	/*--------------------------------------------------------------
+	# media styles
+	--------------------------------------------------------------*/
+	@import "media";
+
+/*--------------------------------------------------------------
+# General styles
+--------------------------------------------------------------*/
+
+body {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	background: #fff;
+}
+
+.wrapper {
+	max-width: 975px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	@include border-box;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.direction {
+	@include direction;
+}
+
+.videoWrapper {
+	@include videoWrapper;
+}
+.mapWrapper {
+	@include mapWrapper;
+	#mapWrapper {
+		min-height: 755px;
+		height: 100%;
+		width: 100%;
+		min-width: 500px;
+	}
+	.gm-style-iw * {
+		display: block;
+		width: 100%;
+	}
+	.gm-style-iw h4, .gm-style-iw p {
+		margin: 0;
+		padding: 0;
+	}
+	.gm-style-iw a {
+		color: #4272db;
+	}
+}
+.lb-data .lb-details {
+	display: none;
+}
+.map-marker-label {
+	position: absolute;
+	left: 60%;
+	top: 195px;
+	transform: translate(-50%, -50%);
+	color: #ff0000;
+	font: 400 24px / 26px $OpenSans;
+	cursor: pointer;
+	z-index: 99999;
+}
+.container {
+	overflow: hidden;
+	box-sizing: border-box;
+}

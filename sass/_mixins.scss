@@ -1,0 +1,91 @@
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin direction {
+	@include site-container;
+	padding: 10px 0;
+	background-color: #5ca7dc;
+	.arrow-back {
+		float: left;
+	}
+	.direction-title {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: white;
+			font: 400 15px / 22px $OpenSans;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+@mixin mapWrapper {
+	overflow:hidden;
+	padding-bottom: 56%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+	.map-overflow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		height: 100%;
+		display: block;
+		cursor: pointer;
+	}
+}
+
+@mixin videoWrapper {
+	position: relative;
+	margin: 15px auto;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	max-width: 971px;
+	max-height: 527px;
+	overflow: hidden;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+@mixin inside-page-main-title {
+	margin: 0 auto;
+	text-align: center;
+	color: #000000;
+	font: 400 27px / 30px $OpenSans;
+	text-transform: uppercase;
+
+	@media (min-width: 1024px) {
+		text-transform: capitalize;
+		padding-left: 25px;
+	}
+}

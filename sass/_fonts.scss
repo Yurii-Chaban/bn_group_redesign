@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../resources/fontawesome/fontawesome-webfont.eot?v=4.6.3');
+	src: url('../resources/fontawesome/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), 
+	url('../resources/fontawesome/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), 
+	url('../resources/fontawesome/fontawesome-webfont.woff?v=4.6.3') format('woff'), 
+	url('../resources/fontawesome/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), 
+	url('../resources/fontawesome/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../resources/MyriadPro/MyriadProRegular.eot");
+    src: url("../resources/MyriadPro/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../resources/MyriadPro/MyriadProRegular.woff") format("woff"),
+    url("../resources/MyriadPro/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTPro';
+	src: url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot');
+	src: url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff2') format('woff2'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff') format('woff'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.ttf') format('truetype'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.svg#HelveticaNeueLTPro-ThEx') format('svg'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}

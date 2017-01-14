@@ -1,0 +1,56 @@
+@media (min-width: 1024px) {
+  .slider-section {
+    .slick-slide {
+      height: 485px;
+    }
+
+    .slider-content {
+      padding: 47px 9px 47px 26px;
+      top: 48%;
+      .main-title {
+        min-width: 505px;
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+  }
+  // advantages
+  .advantages {
+    padding: 24px 0 60px;
+    .advantages-title {
+      font-size: 25px;
+      line-height: 40px;
+      margin: 5px auto 54px;
+      padding-left: 13px;
+
+
+      span {
+        display: inline;
+      }
+    }
+
+    .advantages-list {
+      margin: 0 auto;
+      li {
+        .icon-wrapper {
+          float: initial;
+          width: 65px;
+          margin: 0 auto 32px;
+
+          .fa {
+            font-size: 70px;
+          }
+        }
+        &:nth-child(2) {
+          border-left: 2px solid rgba(255, 255, 255, 0.5);
+          border-right: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .title {
+          width: auto;
+          clear: both;
+        }
+      }
+    }
+  }
+}
