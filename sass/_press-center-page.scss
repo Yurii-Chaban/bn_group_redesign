@@ -1,0 +1,83 @@
+.press-center-articles-list {
+	margin-top: 15px;
+	div {
+		padding: 0;
+	}
+
+	.article-img-wrapper {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.article-content {
+		margin: 0 0 20px 0;
+		padding: 0 25px;
+		.name-of-article {
+			margin: 20px 0 0;
+			color: #6c6460;
+			font: 700 22px / 24px $OpenSans;
+		}
+		.date-of-article {
+			margin: 15px 0;
+			color: #e1ddda;
+			font: 400 16px / 18px $OpenSans;
+			font-style: italic;
+		}
+		.description-of-article {
+			height: 130px;
+			overflow: hidden;
+			p {
+				color: #6c6460;
+				font: 400 16px / 25px $OpenSans;
+			}
+		}
+	}
+
+	.more-btn-content {
+		overflow: hidden;
+		margin: 20px 0;
+		padding: 0 15px 0;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 30px;
+			display: block;
+			width: 80%;
+			height: 2px;
+			background-color: #f4f4f4;
+		}
+		.more-btn-line {
+			float: right;
+			display: block;
+			overflow: hidden;
+			width: 128px;
+			height: 35px;
+			margin: 0 20px 0 0;
+			padding: 0 5px;
+			color: #370909;
+			font: 400 16px / 35px $OpenSans;
+			font-style: italic;
+			border: 1px solid #e1ddda;
+			border-radius: 10px;
+			background-color: #ffffff;
+			@include transition;
+
+			img {
+				float: right;
+				margin: 10px 0 0;
+			}
+
+			&:hover {
+				background-color: #ece7e4;
+			}
+		}
+	}
+}

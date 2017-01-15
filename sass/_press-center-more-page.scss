@@ -1,0 +1,161 @@
+.inside-section-content {
+	.press-center-articles-more {
+		margin-top: 15px;
+		div {
+			padding: 0;
+		}
+		.poster-wrapper {
+			height: 200px;
+			overflow: hidden;
+			@media (max-width: 767px) {
+				img {
+					width: auto;
+					margin: 0 auto;
+					height: 200px;
+					display: block;
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		.padding-space-content {
+			padding: 0 25px;
+
+			.artice-date {
+				margin: 18px 0 0;
+				color: #e1ddda;
+				font: 400 16px / 20px $OpenSans;
+				font-style: italic;
+			}
+			.download-btn {
+				display: block;
+				width: 270px;
+				height: 38px;
+				margin: 15px auto 0;
+				overflow: hidden;
+				text-align: center;
+				background-image: linear-gradient(to top, #703287 0%, #917b9f 100%);
+
+				span {
+					float: left;
+					margin: 7px 0 0 0;
+					color: #ffffff;
+					font: 400 18px / 22px $OpenSans;
+				}
+
+				.fa {
+					float: left;
+					margin: 0 15px 0 55px;
+					color: #ffffff;
+					font-size: 25px;
+					line-height: 35px;
+					text-decoration: underline;
+				}
+			}
+
+			.description-wrapper {
+				margin: 20px auto;
+				p {
+					color: #6c6460;
+					font: 400 16px / 25px $OpenSans;
+					text-align: justify;
+				}
+			}
+		}
+
+	}
+	.slider-more {
+		position: relative;
+		padding: 0;
+
+		* {
+			outline: none !important;
+		}
+
+		.press-center-more-slider {
+			height: 130px;
+			overflow: hidden;
+
+			.slider-next,
+			.slider-prev {
+				display: none;
+			}
+		}
+
+		.left-rgba,
+		.right-rgba {
+			position: absolute;
+			content: "";
+			top: 0;
+			width: 11%;
+			height: 133px;
+			z-index: 2;
+			background: rgba(255, 255, 255, 0.6);
+		}
+		.left-rgba {
+			left: 0;
+		}
+		.right-rgba {
+			right: 0;
+		}
+		.slick-slide {
+			overflow: hidden;
+			margin: 0 5px;
+
+			img {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			a {
+				position: relative;
+				overflow: hidden;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				width: auto;
+				height: 100%;
+				@include transition;
+
+				&:before {
+					content: "\f002";
+					font-family: "FontAwesome";
+					color: #ffaf13;
+					font-size: 24px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: block;
+					margin: 0;
+					width: auto;
+					height: auto;
+					opacity: 0;
+					z-index: 99;
+					@include transition;
+				}
+
+				&:after {
+					content: '';
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: rgba(0,0,0,0.3);
+					opacity: 0;
+				}
+
+				&:hover {
+					&:before,
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

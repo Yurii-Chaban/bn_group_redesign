@@ -1,0 +1,58 @@
+.founders-list {
+	div {
+		padding: 0;
+	}
+
+	.list-item {
+		margin: 20px -15px;
+		border-bottom: 2px solid #f4f4f4;
+
+		&:last-of-type {
+			border: 0;
+		}
+	}
+
+	.img-wrapper {
+		margin: 0 auto;
+		text-align: center;
+		width: 192px;
+		height: 192px;
+		overflow: hidden;
+		border-radius: 100%;
+
+		img {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			border-radius: 100%;
+		}
+	}
+
+	.overflow-content {
+		padding: 0 20px;
+
+		.founders-name {
+			margin: 20px auto 15px;
+			text-align: center;
+			color: #ffad0c;
+			font: 700 22px / 26px $OpenSans;
+			text-transform: capitalize;
+		}
+
+		.founders-position {
+			text-align: center;
+			color: #9a9694;
+			font: 400 16px / 22px $OpenSans;
+		}
+
+		.abou-founders {
+			margin: 15px auto;
+
+			p {
+				color: #6c6460;
+				font: 400 16px / 25px $OpenSans;
+				text-align: justify;
+			}
+		}
+	}
+}

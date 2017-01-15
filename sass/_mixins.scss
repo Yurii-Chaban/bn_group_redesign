@@ -20,8 +20,9 @@
 }
 @mixin direction {
 	@include site-container;
-	padding: 10px 0;
-	background-color: #5ca7dc;
+	padding: 28px 25px 10px 15px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.22);
+	background-color: #370909;
 	.arrow-back {
 		float: left;
 	}
@@ -29,9 +30,51 @@
 		margin: 0 auto;
 		text-align: center;
 		a {
-			color: white;
+			color: #ede9e6;
 			font: 400 15px / 22px $OpenSans;
 			text-transform: uppercase;
+		}
+	}
+	.search-block {
+		width: 295px;
+		overflow: hidden;
+		margin: 0 auto;
+		position: absolute;
+		display: none;
+		top: -5px;
+		left: -5px;
+		.search-text {
+			display: block;
+			float: left;
+			width: 295px;
+			height: 30px;
+			padding: 0 35px 0 10px;
+			color: #e5e0de;
+			font: 400 18px / 30px $MyriadPro;
+			border-radius: 20px;
+			border: 0;
+			background-color: #370909;
+			outline: none;
+		}
+		.search-btn {
+			display: block;
+			float: right;
+			margin: -30px 0 0 0;
+			border: 0;
+			background: transparent;
+
+			.fa {
+				display: block;
+				margin: 2px 5px 0 0;
+				color: #e5e0de;
+				font-size: 16px;
+				opacity: 0.6;
+				font-weight: 400;
+				line-height: 23px;
+			}
+		}
+		&.search-visible {
+			display: block;
 		}
 	}
 }

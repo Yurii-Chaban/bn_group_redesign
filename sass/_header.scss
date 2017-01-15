@@ -1,5 +1,6 @@
 header {
 	height: 130px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.22);
 	background-color: #ffffff;
 
 	.navbar {
@@ -87,8 +88,8 @@ header {
 			}
 		}
 		.logo {
-			width: 80px;
-			height: 95px;
+			width: 75px;
+			height: 85px;
 			margin: 0 auto;
 			position: relative;
 			z-index: 3;
@@ -109,12 +110,14 @@ header {
 			display: block;
 			float: right;
 			margin: 15px 25px 0 0;
+			cursor: pointer;
 
 			.fa {
 				color: #6c6460;
 				font-size: 25px;
 				font-weight: 400;
 				line-height: 26px;
+				cursor: pointer;
 			}
 		}
 	}
@@ -206,4 +209,8 @@ header {
 		}
 	}
 }
-	/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+.inside-page-header {
+	height: 61px;
+}
+/*---------------------------------------------------*/

@@ -1,0 +1,34 @@
+.helpful-article-list-more {
+	margin-top: 20px;
+
+	.more-img-wrapper {
+		max-width: 487px;
+		max-height: 305px;
+		overflow: hidden;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.more-content {
+		margin: 0 auto;
+		padding: 0 30px 0 20px;
+
+		.article-date {
+			margin: 15px 0;
+			color: #e1ddda;
+			font: 400 16px / 18px $OpenSans;
+			font-style: italic;
+		}
+
+		.content {
+			p {
+				color: #6c6460;
+				text-align: justify;
+				font: 400 16px / 25px $OpenSans;
+			}
+		}
+	}
+}
