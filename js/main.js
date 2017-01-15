@@ -59,6 +59,9 @@ $(document).ready(function() {
 		$(".poster-img").css({
 			"display" : "none"
 		});
+		$(".video-section .video-wrapper .video-sign").css({
+			"z-index" : "-1"
+		});
 	});
 
 	// for mobile menu submenu
@@ -90,4 +93,5 @@ $(document).ready(function() {
 			"display" : "block"
 		});
 	});
+	
 });

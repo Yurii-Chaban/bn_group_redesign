@@ -1,0 +1,26 @@
+footer {
+	width: 100% !important;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #370909;
+	.copyright {
+		.copyright-sign {
+			margin: 0 auto;
+			text-align: center;
+			padding: 9px 0 8px;
+			color: #ffffff;
+			font: 400 14px / 22px $OpenSans;
+			a {
+				color: #ffffff;
+				&:nth-of-type(2) {
+					color: #ffffff;
+					font: 400 14px / 22px $HelveticaNeueLTPro;
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

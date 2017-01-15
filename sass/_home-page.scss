@@ -1,6 +1,7 @@
 /*section slider*/
 .slider-section {
 
+
     .main-slider {
         overflow: hidden;
         margin: 0 auto;
@@ -90,7 +91,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        padding: 19px 0;
+        padding: 19px 15px;
         border: 1px solid rgba(242,238,235, 0.7);
         .main-title {
             min-width: 235px;
@@ -195,6 +196,8 @@
 /*end section advantages*/
 
 .about-section {
+    width: 100%;
+    margin: 0 auto;
     background-image: url("../images/about-description-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -302,6 +305,7 @@
         position: relative;
         height: 205px;
 
+
         .poster-img {
             position: relative;
             top: 0;
@@ -337,9 +341,8 @@
         top: 0;
         left: 0;
         display: block;
-        opacity: 0.95;
         cursor: pointer;
-        background-image: linear-gradient(transparent, #000);
+        background-color: rgba(0, 0, 0, 0.45);
         transition: opacity 150ms;
         z-index: 3;
     }
@@ -357,6 +360,8 @@
     box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     .title-bg {
+        max-width: 975px;
+        margin: 0 auto;
         overflow: hidden;
         background-color: #ffad0b;
 
@@ -370,12 +375,23 @@
         .voiting-result-sign {
             display: none;
             margin: 0 auto 15px;
+            text-align: center;
             color: #ffffff;
             font: 600 17px / 30px $OpenSans;
         }
     }
 
     .voting-form-wrapper {
+
+        .line-between {
+            padding: 0;
+            .line {
+                display: block;
+                width: 2px;
+                height: 90px;
+                background-color: rgba(242,238,235, 0.5);
+            }
+        }
 
         .form-row {
             margin: 10px auto;
@@ -534,6 +550,8 @@
     background-color: #e1ddda;
 
     .contact-info {
+        width: 290px;
+        margin: 0 auto;
         padding: 30px 20px;
         .preffoter-phone,
         .preffoter-mail {
@@ -558,15 +576,170 @@
         }
     }
 
-    .preffoter-phone {}
-
-    .preffoter-mail {}
 
     .preffoter-social-icons {
         .preffoter-list {
+            @include border-box;
+            margin: 0 auto;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin: 0 12px;
 
+                .fa {
+                    font-size: 49px;
+                    color: #6c6460;
+                    @include transition;
+                }
+                .fa-youtube-square {
+                    &:hover {
+                        color: #370909;
+                    }
+                }
+                .fa-facebook-square {
+                    &:hover {
+                        color: #3b5998;
+                    }
+                }
+            }
         }
     }
 
-    .subscribe-form-wrapper {}
+    .subscribe-form-wrapper {
+        margin: 30px auto;
+
+        .subscribe-field {
+            display: block;
+            width: 290px;
+            height: 37px;
+            margin: 0 auto;
+            padding-left: 10px;
+            color: #9a928d;
+            font: 400 18px / 37px $OpenSans;
+            border: 1px solid #370909;
+            background-color: #f2eeeb;
+        }
+
+        .subscribe-send-btn {
+            display: block;
+            width: 288px;
+            height: 32px;
+            margin: 15px auto 0;
+            text-align: center;
+            color: #ffffff;
+            font: 400 18px / 27px $OpenSans;
+            border: 1px solid #370909;
+            background-color: #370909;
+        }
+    }
+}
+.order-call  {
+    position: fixed;
+    top: 160px;
+    right: 15%;
+    width: 132px;
+    height: 132px;
+    padding: 6px;
+    border-radius: 100%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.22);
+    background-color: #ffc553;
+    display: none;
+    z-index: 100;
+
+    * {
+        outline: none !important;
+    }
+
+    .order-content {
+        width: 121px;
+        height: 121px;
+        margin: 0 auto;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-radius: 100%;
+        border: 2px solid #ffffff;
+        background-color: #ffad0b;
+
+        .icon {
+            display: block;
+            margin: 12px auto 0;
+            text-align: center;
+            .fa {
+                font-size: 54px;
+                color: #ffffff;
+            }
+        }
+
+        .text-link {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+            font: 700 12px / 14px $OpenSans;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#call-order-form {
+    .modal-title {
+        text-align: center;
+        color: #370909;
+        font: 400 20px / 35px $OpenSans;
+    }
+    .order-row {
+        margin: 10px auto;
+
+        .user-name,
+        .user-email {
+            display: block;
+            width: 100%;
+            height: 39px;
+            padding-left: 15px;
+            color: #9a928d;
+            font: 400 16px / 35px $OpenSans;
+            background-color: #f2eeeb;
+            border: 0;
+        }
+
+        .order-btn {
+            display: block;
+            width: 170px;
+            height: 39px;
+            margin: 15px auto 0;
+            text-align: center;
+            color: #370909;
+            font: 400 18px/35px "Open Sans", sans-serif;
+            border: 1px solid #370909;
+            background-color: transparent;
+            @include transition;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #370909;
+            }
+        }
+    }
+}
+@media (min-width: 1540px) {
+    .slider-section {
+        .main-slider {
+            .slick-slide {
+                 img {
+                    min-height: 650px;
+                 }
+            }
+        }
+    }
+}
+@media (min-width: 2200px) {
+    .slider-section {
+        .main-slider {
+            .slick-slide {
+                 img {
+                    min-height: 850px;
+                 }
+            }
+        }
+    }
 }
