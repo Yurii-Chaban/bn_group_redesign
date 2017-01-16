@@ -1,0 +1,69 @@
+.inside-section-content {
+
+	&.about-page {
+		margin-top: 10px;
+		div {
+			padding: 0;
+		}
+		.about-wrapper-thumbnail {
+			width: 100%;
+			height: 355px;
+			overflow: hidden;
+
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+		.about-content-description {
+			margin: 15px auto;
+			padding: 0 20px;
+			overflow: hidden;
+
+			p {
+				color: #6c6460;
+				font: 400 16px / 25px $OpenSans;
+				text-align: justify;
+			}
+		}
+
+		.download-presentation-btn {
+			width: 289px;
+			height: 48px;
+			margin: 0 auto;
+			overflow: hidden;
+			background-image: linear-gradient(to top, #703287 0%, #917b9f 100%);
+
+			.download-text {
+				display: block;
+				margin: 15px auto;
+				text-align: center;
+				color: #ffffff;
+				font: 600 16px / 18px $OpenSans;
+				text-transform: uppercase;
+			}
+
+			.download-icon {
+				float: right;
+				display: block;
+				width: 65px;
+				height: 100%;
+				background-image: linear-gradient(to top, #ffad0b 0%, #ffd582 100%);
+
+				img {
+					text-align: center;
+					display: block;
+					margin: 15px auto;
+				}
+			}
+		}
+
+		.site-navigation {
+			.share-block {
+				width: 190px;
+				margin: 20px auto;
+			}
+		}
+	}
+
+}
