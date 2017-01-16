@@ -4,10 +4,6 @@
   padding: 5px;
   background: none;
   border: none;
-  border-radius: 30px;
-  text-transform: capitalize;
-  font: 400 15px 'Droid Sans', sans-serif;
-  color: #2c3e50;
   cursor: pointer;
 }
 /* .filters-button:hover {
@@ -49,9 +45,12 @@
     color: #ede9e6;
     font: 400 18px / 25px "Open Sans", sans-serif;
   }
-  .button-group .button:first-child { border-radius: 30px; }
+  .button-group .filters-button:hover {
+    color: #ffad0b;
+  }
+  /* .button-group .button:first-child { border-radius: 30px; }
   .button-group .button:last-child { border-radius: 30px; margin-right: 0; }
-
+ */
   /* ---- isotope ---- */
 
   .grid {
@@ -77,6 +76,7 @@
   @media (min-width: 460px) {
     .element-item {
       width: 47%;
+      margin:  1%;
     }
   }
 

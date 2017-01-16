@@ -56,10 +56,26 @@ $(document).ready(function() {
 	// for show filter block
 	$(document).ready(function() {
 		$(".filter-btn").click(function() {
-			$(".filter-block").toggleClass("filter-actve");
+			$(".filter-block").toggleClass("filter-active");
 		});
-		$(".filter-header").click(function() {
-			$(".filter-menu-content").toggleClass("filter-menu-content-actve");
+
+		$(".filter-header-mobile")['on']("click", function(){
+
+			if ($(this).parent().children(".filter-menu-content").css("display") == "none"){
+				$(".filter-menu-content").css("display","none");
+				$(this).parent().children(".filter-menu-content").css({"display" : "block"});
+			}
+
+		});
+
+		$(".filter-country").click(function() {
+			$(".filter-menu-content").toggleClass("filter-menu-content-active-country");
+		});
+		$(".filter-age").click(function() {
+			$(".filter-menu-content").toggleClass("filter-menu-content-active-age");
+		});
+		$(".filter-language").click(function() {
+			$(".filter-menu-content").toggleClass("filter-menu-content-active-language");
 		});
 	});
 
@@ -93,6 +109,57 @@ $(document).ready(function() {
 		prevArrow: '<div class="slider-prev"><i class="fa fa-angle-left"></i></div>',
 	});
 
+	// school more slider 
+	// $('.school-slider').slick({
+	// 	infinite: false,
+	// 	centerMode: true,
+	// 	speed: 300,
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 1,
+	// 	centerPadding: '20px',
+	// 	responsive: [
+	// 	{
+	// 		breakpoint: 768,
+	// 		settings: {
+	// 			arrows: true,
+	// 			centerMode: true,
+	// 			centerPadding: '20px',
+	// 			slidesToShow: 3
+	// 		}
+	// 	},
+	// 	{
+	// 		breakpoint: 480,
+	// 		settings: {
+	// 			arrows: false,
+	// 			centerMode: true,
+	// 			centerPadding: '20px',
+	// 			slidesToShow: 3
+	// 		}
+	// 	}
+	// 	],
+	// 	nextArrow: '<div class="btn-next"><i class="fa fa-angle-right"></i></div>',
+	// 	prevArrow: '<div class="btn-prev"><i class="fa fa-angle-left"></i></div>',
+	// });
+	var swiper = new Swiper('.swiper-container', {
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		effect: 'coverflow',
+		keyboardControl	: true,
+		loop: true,
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		slidesPerView: 1,
+		autoplay: 52500,
+		coverflow: {
+			rotate: 0,
+			stretch: 70,
+			depth: 180,
+			modifier: 1,
+			slideShadows : true
+		}
+	});
+
 	// press-center- more page fancybox
 	$(".fancybox").fancybox({
 		helpers: {
@@ -101,5 +168,5 @@ $(document).ready(function() {
 			}
 		}
 	});
-	
+
 });

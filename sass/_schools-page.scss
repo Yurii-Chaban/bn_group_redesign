@@ -15,13 +15,13 @@
 		z-index: 2;
 		display: none;
 
-		&.filter-actve {
+		&.filter-active {
 			display: block;
 		}
 
 		.filter-list-mobile {
 
-			.filter-header {
+			.filter-header-mobile {
 				overflow: hidden;
 				padding: 0 25px;
 				.filter-icon {
@@ -64,7 +64,7 @@
 				background-color: #370909;
 				display: none;
 
-				&.filter-menu-content-actve {
+				&.filter-menu-content-active {
 					display: block;
 				}
 			}
@@ -76,19 +76,71 @@
 	.grid {
 		.element-item {
 			.item-thubnail {
+				width: 100%;
+				max-width: 320px;
+				max-height: 200px;
+				overflow: hidden;
 
+				img {
+					width: 100%;
+				}
 			}
 
 			.owerflow-width-wrapper {
-
+				overflow: hidden;
+				padding: 0 20px;
 			}
 
-			.name-of-school {}
+			.name-of-school {
+				margin: 20px 0;
+				color: #6c6460;
+				text-align: left;
+				font: 700 22px / 24px $OpenSans;
+			}
 
 			.characteristics-list {
 				li {
-					.icon-wrapper {}
-					.description {}
+					overflow: hidden;
+					display: block;
+					margin: 10px auto;
+
+					.icon-wrapper {
+						float: left;
+						min-width: 17px;
+						margin: 0 15px 0 0;
+
+						.fa {
+							display: block;
+							margin: 0 auto;
+							text-align: center;
+							color: #6c6460;
+							font-size: 18px;
+							font-weight: 400;
+							line-height: 23px;
+						}
+					}
+
+					.description {
+						overflow: hidden;
+						p {
+							text-align: left;
+							color: #6c6460;
+							font: 400 18px / 22px $OpenSans;
+						}
+					}
+				}
+			}
+
+			.school-more {
+				display: block;
+				float: right;
+				margin: 10px 0 20px;
+				color: #6c6460;
+				font: 600 16px / 20px $OpenSans;
+				@include transition;
+
+				&:hover {
+					color: #ffad0a;
 				}
 			}
 		}

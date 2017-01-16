@@ -1,0 +1,247 @@
+.poster-school-section {
+	position: relative;
+	.full-width-img {
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+
+		img {
+			width: auto;
+			min-height: 600px;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+		}
+	}
+
+	.position-school-content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		padding: 20px 0;
+		background-color: rgba(255, 255, 255, 0.8);
+
+		.school-characteristics-list {
+			li {
+				overflow: hidden;
+				display: block;
+				margin: 10px auto;
+
+				.icon-wrapper {
+					float: left;
+					min-width: 17px;
+					margin: 0 15px 0 0;
+
+					.fa {
+						display: block;
+						min-width: 30px;
+						margin: 0 auto;
+						text-align: center;
+						color: #370909;	
+						font-size: 20px;
+						font-weight: 400;
+						line-height: 23px;
+					}
+				}
+
+				.description {
+					overflow: hidden;
+					p {
+						text-align: left;
+						color: #370909;
+						font: 400 18px / 22px $OpenSans;
+					}
+				}
+			}
+		}
+	}
+	.download-block {
+		.download-btn {
+			display: block;
+			width: 270px;
+			height: 38px;
+			margin: 15px auto 0;
+			overflow: hidden;
+			text-align: center;
+			background-image: linear-gradient(to top, #703287 0%, #917b9f 100%);
+
+			span {
+				float: left;
+				margin: 7px 0 0 0;
+				color: #ffffff;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			.fa {
+				float: left;
+				margin: 0 15px 0 55px;
+				color: #ffffff;
+				font-size: 25px;
+				line-height: 35px;
+				text-decoration: underline;
+			}
+		}
+	}
+	.school-description-block {
+		margin: 20px auto 15px;
+		width: 95%;
+		float: initial;
+		overflow: hidden;
+		border: 1px solid #ffad0b;
+
+		.description-title {
+			margin: 20px auto 15px;
+			text-align: center;
+			color: #ffad0b;
+			font: 700 22px / 25px $OpenSans;
+			text-transform: uppercase;
+		}
+
+		.description-text {
+			p {
+				font: 400 16px / 25px $OpenSans;
+				color: #370909;
+			}
+		}
+	}
+
+	.recomendation-block {
+		width: 95%;
+		margin: 0 auto;
+		float: initial;
+		overflow: hidden;
+		background-image: linear-gradient(to top, rgba(255,173,11, 0.22) 0%,  rgba(255,236,132, 0.22) 100%);
+		.recomendation-title {
+			margin: 20px auto 0;
+			color: #861400;
+			font: 700 22px / 30px $OpenSans;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.recomendation-list {
+			li {
+				display: block;
+				overflow: hidden;
+				margin: 10px auto;
+
+				.icon {
+					float: left;
+					min-width: 25px;
+					margin: 0 15px 0 0;
+
+					.fa {
+						display: block;
+						color: #ec2002;
+						font-size: 25px;
+					}
+				}
+
+				.descr {
+					overflow: hidden;
+					p {
+						color: #370909;
+						font: 400 18px / 25px $OpenSans;
+					}
+				}
+			}
+		}
+	}
+}
+
+.school-more-slider {
+	margin: 20px auto;
+	background-image: linear-gradient(to top, rgba(225,221,218, 0.54) 0%, rgba(242,238,235, 0.54) 100%);
+
+	.white-block-left, 
+	.white-block-right {
+		display: block;
+		position: absolute;
+		top: 0;
+		z-index: 9;
+		width: 7%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	.white-block-left {
+		left: -5%;
+	}
+	.white-block-right {
+		right: -5%;
+	}
+	.swiper-container {
+		max-width: 820px;
+		margin: 0 auto;
+		padding-left: 20px;
+		overflow: inherit;
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+	}
+	.swiper-slide {
+		height: 153px;
+		// box-shadow: 0 0 13px rgba(0, 0, 0, 0.44);
+	}
+	.swiper-wrapper{
+		// width: 600px;
+	}
+}
+
+.school-video-section	{
+	// video
+	.video-wrapper {
+		position: relative;
+		height: 205px;
+
+
+		.poster-img {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background-image: url("../images/school-video-poster.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	.video-wrapper > video {
+		width: 100%;
+		margin-top: -10%;
+	}
+	.video-wrapper > video[poster]{
+        // background-size: 100% 100%;
+      }
+
+      .video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+      	display: none;
+      }
+
+      .video-overlay-play-button {
+      	box-sizing: border-box;
+      	width: 100%;
+      	height: 100%;
+      	padding: 10px calc(50% - 50px);
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      	display: block;
+      	cursor: pointer;
+      	background-color: rgba(0, 0, 0, 0.45);
+      	transition: opacity 150ms;
+      	z-index: 3;
+      }
+
+      .video-overlay-play-button:hover {
+      	opacity: 1;
+      }
+
+      .video-overlay-play-button.is-hidden {
+      	display: none;
+      }
+    }
