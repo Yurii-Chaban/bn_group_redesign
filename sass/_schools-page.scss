@@ -1,0 +1,96 @@
+.direction {
+	height: 60px;
+	.filter-btn {
+		float: right;
+	}
+
+	.filter-block {
+		position: absolute;
+		width: 100%;
+		min-width: 320px;
+		background-color: #ede9e6;
+		top: 32px;
+		left: 0;
+		margin: 0 -15px;
+		z-index: 2;
+		display: none;
+
+		&.filter-actve {
+			display: block;
+		}
+
+		.filter-list-mobile {
+
+			.filter-header {
+				overflow: hidden;
+				padding: 0 25px;
+				.filter-icon {
+					float: left;
+					min-width: 20px;
+					margin: 0 10px 0 0;
+					padding: 15px 0;
+
+					.fa {
+						display: block;
+						margin: 0 auto;
+						text-align: center;
+						color: #861400;
+						font-size: 25px;
+					}
+				}
+				.filter-text {
+					float: left;
+					margin: 15px 0 0;
+					p {
+						color: #8a200e;
+						font: 400 18px / 22px $OpenSans;
+					}
+				}
+				.fiter-btn {
+					float: right;
+					margin: 15px 0 0;
+					cursor: pointer;
+
+					.fa {
+						display: block;
+						color: #861400;
+						font-size: 25px;
+					}
+				}
+			}
+
+			.filter-menu-content {
+				padding: 0 25px;
+				background-color: #370909;
+				display: none;
+
+				&.filter-menu-content-actve {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.filter-content {
+	.grid {
+		.element-item {
+			.item-thubnail {
+
+			}
+
+			.owerflow-width-wrapper {
+
+			}
+
+			.name-of-school {}
+
+			.characteristics-list {
+				li {
+					.icon-wrapper {}
+					.description {}
+				}
+			}
+		}
+	}
+}

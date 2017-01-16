@@ -53,6 +53,16 @@ $(document).ready(function() {
 		});
 	});
 
+	// for show filter block
+	$(document).ready(function() {
+		$(".filter-btn").click(function() {
+			$(".filter-block").toggleClass("filter-actve");
+		});
+		$(".filter-header").click(function() {
+			$(".filter-menu-content").toggleClass("filter-menu-content-actve");
+		});
+	});
+
 	// for press-center slider
 	$('.press-center-more-slider').slick({
 		infinite: true,

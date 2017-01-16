@@ -243,6 +243,7 @@
       }
     }
   }
+  
 }
 @media (min-width: 1024px) {
 
@@ -808,9 +809,18 @@ footer {
     left: -45px;
   }
 
-  img {
-    position: absolute;
-  }
+  &.contact-page-img {
+   top: -20px;
+   left: -15px;
+ }
+ &.schools-img {
+  top: 0;
+  left: -180px;
+}
+
+img {
+  position: absolute;
+}
 }
 
 }
@@ -900,6 +910,42 @@ footer {
         padding: 0;
       }
     }
+  }
+}
+.contact-page {
+  .position-contact-block {
+
+    .custom-map {
+      height: 495px;
+
+      .mapWrapper {
+        height: 495px;
+        #mapWrapper {
+          min-height: 550px !important;
+        }
+      }
+    }
+
+    .contact-info-block,
+    .contact-page-form {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      width: 335px;
+      height: 495px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    .contact-info-block {
+      left: 0;
+
+      .information {
+        margin: 30px auto 10px;
+      }
+    }
+  }
+  .contact-page-form {
+    right: 0;
   }
 }
 

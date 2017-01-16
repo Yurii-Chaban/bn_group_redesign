@@ -1,0 +1,142 @@
+.contact-page {
+	overflow: hidden;
+	.position-contact-block {
+		.contact-info-block {
+
+			
+			.information,
+			.phone-list,
+			.email-list {
+				margin: 10px auto;
+				* {
+					text-align: left;
+					color: #6c6460;
+					font: 400 16px / 25px $OpenSans;
+				}
+				div {
+					padding: 0;
+				}
+
+				.icon-wrapper {
+					.fa {
+						display: block;
+						font-family: "FontAwesome";
+						margin: 0 auto;
+						text-align: center;
+						color: #6c6460;
+						font-size: 23px;
+					}
+				}
+			}
+			.phone-list,
+			.email-list {
+				a {
+					display: block;
+					margin: 0 0 0 15px;
+				}
+			}
+
+			
+			.information {
+				.icon-wrapper {
+					.fa {
+						margin: 20px 0 0;
+					}
+				}
+			}
+
+			.order-phone-call-btn {
+				display: block;
+				width: 164px;
+				height: 32px;
+				margin: 20px 0;
+				text-align: center;
+				color: #370909;
+				font: 400 16px / 27px $OpenSans;
+				border: 1px solid #370909;
+				@include transition;
+				text-decoration: none;
+
+				&:active,
+				&:visited {
+					text-decoration: none;
+					outline: none;
+				}
+
+				&:hover {
+					background-color: #370909;
+					color: #ffffff;
+				}
+			}
+		}
+
+		.custom-map {
+			padding: 0;
+			.mapWrapper {
+				padding-bottom: 0;
+				height: 300px;
+				#mapWrapper {
+					min-width: 100%;
+					min-height: 350px !important;
+				}
+			}
+		}
+
+		.contact-page-form {
+			padding: 20px 15px;
+			overflow: hidden;
+			.form-row {
+				margin: 10px auto;
+
+				.form-row,
+				.input-name,
+				.input-phone,
+				.input-email,
+				.message-area {
+					display: block;
+					width: 100%;
+					height: auto;
+					@include border-box;
+					border: 0;
+					background-color: #f2eeeb;
+					outline: none !important;
+
+					color: #9a928d;
+					font: 400 16px / 32px $OpenSans;
+				}
+
+				.form-row,
+				.input-name,
+				.input-phone,
+				.input-email {
+					height: 39px;
+					padding: 0 0 0 10px;
+				}
+				.message-area {
+					height: 185px;
+					padding: 20px 0 0 10px;
+					resize: none;
+				}
+			}
+
+			.form-submit-btn {
+				display: block;
+				float: right;
+				width: 133px;
+				height: 37px;
+				margin: 15px 0 0;
+				border: 1px solid #370909;
+				background-color: transparent;
+				color: #370909;
+				font: 400 16px / 27px $OpenSans;
+				@include transition;
+				cursor: pointer;
+
+				&:hover {
+					background-color: #370909;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
