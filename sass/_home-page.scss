@@ -512,6 +512,88 @@
             }
         }
     }
+    .voting-form-result-second-wrapper {
+        overflow: hidden;
+        .block-left {
+            margin: 10px auto;
+            .city-title {
+                color: #6c6460;
+                font: 400 18px / 20px $OpenSans;
+                text-align: right;
+            }
+
+            .status-block {
+                height: 35px;
+                overflow: hidden;
+                .percent-count {
+                    float: left;
+                    margin: 10px 15px 0 0;
+                    color: #370909;
+                    font: 700 18px / 20px $OpenSans;
+                }
+                .status-diagrame {
+                    float: right;
+                    width: 75%;
+                    height: 35px;
+
+                    @media (min-width: 768px) {
+                        width: 80%;
+                    }
+                    &.first-diagrame {
+                        background-image: linear-gradient(-86deg, #f7d826 0%, #feec81 100%);
+                    }
+
+                    &.second-diagrame {
+                        background-image: linear-gradient(-85deg, #ffad0b 0%, #ffd582 100%);
+                    }
+                }
+            }
+        }
+
+        .line-between {
+            width: 2px;
+            height: 137px;
+            margin: 12px auto 0;
+            padding: 0;
+            text-align: center;
+            background-color: rgba(242,238,235, 0.5);
+        }
+
+        .block-right {
+            margin: 10px auto;
+            .city-title {
+                color: #6c6460;
+                font: 400 18px / 20px $OpenSans;
+                text-align: left;
+            }
+
+            .status-block {
+                height: 35px;
+                overflow: hidden;
+                .percent-count {
+                    float: right;
+                    margin: 10px 15px 0 0;
+                    color: #370909;
+                    font: 700 18px / 20px $OpenSans;
+                }
+                .status-diagrame {
+                    float: left;
+                    width: 75%;
+                    height: 35px;
+                     @media (min-width: 768px) {
+                        width: 80%;
+                    }
+                    &.third-diagrame {
+                        background-image: linear-gradient(to right, #861400 0%, #ce624f 100%);
+                    }
+
+                    &.fourth-diagrame {
+                        background-image: linear-gradient(88deg, #703287 0%, #917b9f 100%);
+                    }
+                }
+            }
+        }
+    }
 }
 
 .about-description-section {
@@ -724,21 +806,21 @@
     .slider-section {
         .main-slider {
             .slick-slide {
-                 img {
-                    min-height: 650px;
-                 }
+               img {
+                min-height: 650px;
             }
         }
     }
+}
 }
 @media (min-width: 2200px) {
     .slider-section {
         .main-slider {
             .slick-slide {
-                 img {
-                    min-height: 850px;
-                 }
+               img {
+                min-height: 850px;
             }
         }
     }
+}
 }
