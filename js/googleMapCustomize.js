@@ -172,7 +172,7 @@
 			});
 		}
 
-		initialize();  
+		google.maps.event.addDomListener(window, "load", initialize);  
 	} catch (e) {
 		alert(e);
 	}
