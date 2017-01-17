@@ -1,3 +1,4 @@
+
 $(document).ready(function() {   
 	// for mobile navigation
 	var sideslider = $('[data-toggle=collapse-side]');
@@ -58,26 +59,36 @@ $(document).ready(function() {
 		$(".filter-btn").click(function() {
 			$(".filter-block").toggleClass("filter-active");
 		});
+// click mobile filter lists
+		// $(".filter-header-mobile")['on']("click", function(){
 
-		$(".filter-header-mobile")['on']("click", function(){
+		// 	if ($(this).parent().children(".filter-menu-content").css("display") == "none"){
+		// 		$(".filter-menu-content").css("display","none");
+		// 		$(this).parent().children(".filter-menu-content").css({"display" : "block"});
+		// 	}
 
-			if ($(this).parent().children(".filter-menu-content").css("display") == "none"){
-				$(".filter-menu-content").css("display","none");
-				$(this).parent().children(".filter-menu-content").css({"display" : "block"});
+		// });
+
+		$(".filter-header-mobile").click(function() {
+			if (!$(this).parent().children(".filter-menu-content").hasClass("filter-menu-content-active")) {
+				$(".filter-menu-content").removeClass("filter-menu-content-active");
+				$(this).parent().children(".filter-menu-content").toggleClass("filter-menu-content-active");
 			}
-
+			else {
+				$(".filter-menu-content").removeClass("filter-menu-content-active");
+			}
 		});
-
-		$(".filter-country").click(function() {
-			$(".filter-menu-content").toggleClass("filter-menu-content-active-country");
-		});
-		$(".filter-age").click(function() {
-			$(".filter-menu-content").toggleClass("filter-menu-content-active-age");
-		});
-		$(".filter-language").click(function() {
-			$(".filter-menu-content").toggleClass("filter-menu-content-active-language");
-		});
-	});
+// click desctop filter listst 
+$(".filter-header").click(function() {
+	if (!$(this).parent().children(".filter-menu-content").hasClass("filter-menu-content-active")) {
+		$(".filter-menu-content").removeClass("filter-menu-content-active");
+		$(this).parent().children(".filter-menu-content").toggleClass("filter-menu-content-active");
+	}
+	else {
+		$(".filter-menu-content").removeClass("filter-menu-content-active");
+	}
+});
+});
 
 	// for press-center slider
 	$('.press-center-more-slider').slick({
@@ -144,7 +155,7 @@ $(document).ready(function() {
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',
 		effect: 'coverflow',
-		keyboardControl	: true,
+		keyboardControl: true,
 		loop: true,
 		grabCursor: true,
 		centeredSlides: true,
@@ -169,4 +180,66 @@ $(document).ready(function() {
 		}
 	});
 
+// use isotop
+	// var $container = $('.grid'); 
+	// $container.isotope({ 
+	// 	filter: '*', 
+	// 	animationOptions: { 
+	// 		duration: 750, 
+	// 		easing: 'linear', 
+	// 		queue: false, 
+	// 	}
+	// }); 
+
+	// $('.filter-list li a').click(function(){ 
+	// 	var selector = $(this).attr('data-filter'); 
+	// 	$container.isotope({ 
+	// 		filter: selector, 
+	// 		animationOptions: { 
+	// 			duration: 750, 
+	// 			easing: 'linear', 
+	// 			queue: false, 
+	// 		} 
+	// 	}); 
+	// 	return false; 
+	// }); 
+
+
 });
+
+	// use slider
+	jQuery(document).ready(function ($) {
+
+		var jssor_1_options = {
+			$AutoPlay: true,
+			$SlideWidth: 600,
+			$Cols: 2,
+			$Align: 100,
+			$ArrowNavigatorOptions: {
+				$Class: $JssorArrowNavigator$
+			},
+			$BulletNavigatorOptions: {
+				$Class: $JssorBulletNavigator$
+			}
+		};
+
+		var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+		/*responsive code begin*/
+		/*you can remove responsive code if you don't want the slider scales while window resizing*/
+		function ScaleSlider() {
+			var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+			if (refSize) {
+				refSize = Math.min(refSize, 800);
+				jssor_1_slider.$ScaleWidth(refSize);
+			}
+			else {
+				window.setTimeout(ScaleSlider, 30);
+			}
+		}
+		ScaleSlider();
+		$(window).bind("load", ScaleSlider);
+		$(window).bind("resize", ScaleSlider);
+		$(window).bind("orientationchange", ScaleSlider);
+		/*responsive code end*/
+	});
