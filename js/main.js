@@ -121,36 +121,7 @@ $(".filter-header").click(function() {
 	});
 
 	// school more slider 
-	// $('.school-slider').slick({
-	// 	infinite: false,
-	// 	centerMode: true,
-	// 	speed: 300,
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 1,
-	// 	centerPadding: '20px',
-	// 	responsive: [
-	// 	{
-	// 		breakpoint: 768,
-	// 		settings: {
-	// 			arrows: true,
-	// 			centerMode: true,
-	// 			centerPadding: '20px',
-	// 			slidesToShow: 3
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 480,
-	// 		settings: {
-	// 			arrows: false,
-	// 			centerMode: true,
-	// 			centerPadding: '20px',
-	// 			slidesToShow: 3
-	// 		}
-	// 	}
-	// 	],
-	// 	nextArrow: '<div class="btn-next"><i class="fa fa-angle-right"></i></div>',
-	// 	prevArrow: '<div class="btn-prev"><i class="fa fa-angle-left"></i></div>',
-	// });
+	
 	var swiper = new Swiper('.swiper-container', {
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',

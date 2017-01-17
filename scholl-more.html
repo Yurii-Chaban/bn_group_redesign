@@ -15,11 +15,21 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 	<!--- Component CSS -->
+	<!-- Slick slider -->
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
+	<!-- Swiper slider -->
+	<link rel="stylesheet" href="stylesheets/swiper.min.css">
+	<!-- isotope -->
+	<link rel="stylesheet" href="stylesheets/isotope/isotope.css">
+	<!-- jquerysctipttop -->
+	<link rel="stylesheet" href="stylesheets/jquerysctipttop.css">
+	<!-- fancybox -->
+	<link rel="stylesheet" href="stylesheets/fancybox/jquery.fancybox.css">
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="stylesheets/slick.css">
-	<link rel="stylesheet" href="stylesheets/swiper.min.css">
-	<link rel="stylesheet" href="stylesheets/slick-theme.css">
+	<!-- Main styles -->
 	<link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body>
@@ -377,49 +387,50 @@
 	</section>
 	<section class="school-more-slider container">
 		<div class="wrapper">
-			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:800px;height:300px;overflow:hidden;visibility:hidden; min-height: 153px;">
-				<!-- Loading Screen -->
-				<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-					<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-					<div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+			<div class="custom-container-width">
+				<div class="slider-container">
+					<div class="swiper-container">
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="images/press-center-more-slider-item-2.jpg" alt="slidwer item">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="images/press-center-more-slider-item-3.jpg" alt="slidwer item">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="images/press-center-photo-5.jpg" alt="slidwer item">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="images/press-center-more-slider-item-3.jpg" alt="slidwer item">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="images/press-center-photo-5.jpg" alt="slidwer item">
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next">
+							<span class="button-icon">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div class="swiper-button-prev">
+							<span class="button-icon">
+								<i class="fa fa-angle-left" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
 				</div>
-				<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:800px;height:300px;overflow:hidden;">
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-more-slider-item-2.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-more-slider-item-3.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-photo-5.jpg" />
-					</div>
-					<a data-u="any" href="http://www.jssor.com" style="display:none">Nearby Image Partial Visible Slider</a>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-more-slider-item-2.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-more-slider-item-3.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-photo-5.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-more-slider-item-2.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-more-slider-item-3.jpg" />
-					</div>
-					<div data-p="112.50">
-						<img data-u="image" src="images/press-center-photo-5.jpg" />
-					</div>
-				</div>
-				<!-- Bullet Navigator -->
-				<div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
-					<div data-u="prototype" style="width:12px;height:12px;"></div>
-				</div>
-				<!-- Arrow Navigator -->
-				<span data-u="arrowleft" class="jssora13l" style="top:0px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
-				<span data-u="arrowright" class="jssora13r" style="top:0px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
 			</div>
 		</div>
 	</section>
@@ -722,10 +733,10 @@
 
 		</div>
 	</div>
-	
+
 	<!-- jssor -->
-	<script src="js/jquery-1.11.3.min.js" type="text/javascript" data-library="jquery" data-version="1.11.3"></script>
-	<script src="js/jssor.slider-22.1.5.mini.js" type="text/javascript" data-library="jssor.slider.mini" data-version="22.1.5"></script>
+<!-- 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" data-library="jquery" data-version="1.11.3"></script>
+	<script src="js/jssor.slider-22.1.5.mini.js" type="text/javascript" data-library="jssor.slider.mini" data-version="22.1.5"></script> -->
 	<!-- jQuery library -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<!-- Slick slider -->

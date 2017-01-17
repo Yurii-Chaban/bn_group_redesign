@@ -18,8 +18,8 @@
 
       .swiper-slide {
         height: auto;
-        max-width: 280px;
-        max-height: 170px;
+        // max-width: 280px;
+        // max-height: 170px;
         overflow: hidden;
         .img-wrapper {
           width: 280px;
@@ -283,12 +283,63 @@
   .school-more-slider {
     padding: 50px 0;
     .swiper-container {
-      padding-left: 25%;
+      // padding-left: 25%;
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: block;
+        background-image: none;
+        width: 65px;
+        height: 100%;
+        top: 15px;
+        background-color: #f5f3f1;
+        
+        @include transition;
+
+        .button-icon {
+          width: 44px;
+          height: 44px;
+          position: absolute;
+          display: block;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 1px solid #9a9694;
+          border-radius: 100%;
+          @include transition;
+          z-index: 5;
+
+          .fa {
+            color: #9a9694;
+            display: block;
+            margin: 0 auto;
+            font-size: 30px;
+            text-align: center;
+            line-height: 40px;
+          }
+        }
+
+        &:hover {
+          .button-icon {
+            border-color: #ffb013;
+            .fa {
+              color: #ffb013;
+            }
+          }
+        }
+      }
+
+      .swiper-button-next {
+        right: -80%;
+      }
+      .swiper-button-prev {
+        left: -80%;
+      }
 
       .swiper-slide {
         height: auto;
-        max-width: 395px;
-        max-height: 325px;
+        // max-width: 395px;
+        // max-height: 325px;
         overflow: hidden;
         .img-wrapper {
           width: 395px;
@@ -301,19 +352,7 @@
         }
       }
 
-      // .swiper-slide-active,
-      // .swiper-slide-next {
-      //   max-width: 485px;
-      //   .img-wrapper {
-      //     width: 485px;
-      //     height: 325px;
 
-      //     img {
-      //       min-width: 485px;
-      //       min-height: 325px;
-      //     }
-      //   }
-      // }
     }
   }
 

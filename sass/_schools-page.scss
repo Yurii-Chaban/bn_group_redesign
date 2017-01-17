@@ -1,5 +1,5 @@
 .direction {
-	height: 60px;
+	height: auto;
 	.filter-btn {
 		float: right;
 	}
@@ -7,7 +7,7 @@
 	.filter-block {
 		position: absolute;
 		width: 100%;
-		min-width: 98vw;
+		min-width: 100vw;
 		background-color: #ede9e6;
 		top: 32px;
 		left: 0;
