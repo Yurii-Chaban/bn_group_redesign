@@ -1,3 +1,39 @@
+@media (min-width: 425px) {
+  .school-more-slider {
+    padding: 50px 0;
+
+    .white-block-left,
+    .white-block-right {
+      width: 18.5%;
+    }
+
+    .white-block-left {
+      left: 0;
+    }
+    .white-block-right {
+      right: 0;
+    }
+    .swiper-container {
+      padding-left: 0;
+
+      .swiper-slide {
+        height: auto;
+        max-width: 280px;
+        max-height: 170px;
+        overflow: hidden;
+        .img-wrapper {
+          width: 280px;
+          height: 170px;
+
+          img {
+            min-width: 395px;
+            min-height: 285px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (min-width: 768px) {
   .navbar-header {
     float: initial;
@@ -282,8 +318,82 @@
   }
 
   .school-video-section {
+    width: 100%;
+    margin: 20px auto;
     .video-wrapper {
-      height: 455px;
+      height: 560px;
+    }
+  }
+  .individual-school-video-section {
+    width: 100%;
+    margin: 20px auto;
+    .video-wrapper {
+      height: 560px;
+    }
+  }
+
+  .poster-school-section {
+    .download-block {
+      padding: 0 5px;
+      .download-btn {
+        width: 100%;
+
+        .fa {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  .filter-content {
+    .grid {
+      &.individual-programs {
+        padding: 0 10px;
+        .element-item {
+          width: 100%;
+          max-height: 205px;
+          margin: 1% 0;
+          border: 1px solid #f2eeeb;
+
+          .item-thubnail {
+            min-width: 445px;
+            width: 445px;
+            min-height: 204px;
+            height: 204px;
+            overflow: hidden;
+            float: left;
+            margin: 0 25px 0 0;
+
+            img {
+              width: 445px;
+              min-height: 205px;
+            }
+          }
+          .owerflow-width-wrapper {
+            padding: 0 20px 0 0;
+            .name-of-school {
+              margin: 10px 0;
+            }
+            .school-more {
+              margin: 0;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .individual-programs-poster {
+    .poster-wrapper {
+      img {
+        height: 305px;
+      }
+    }
+  }
+  .individual-program-description-section {
+    div {
+      padding: 0;
     }
   }
   
@@ -860,6 +970,10 @@ footer {
   top: 0;
   left: -180px;
 }
+&.individual-programs-img {
+  top: -97px;
+  left: -115px;
+}
 
 img {
   position: absolute;
@@ -1054,23 +1168,17 @@ img {
   }
 
   .filter-menu-content {
-    width: 253px;
+    width: 251px;
     height: auto;
     margin: 3px auto 0;
     background-color: #f2eeeb;
     display: none;
     position: absolute;
     top: 43px;
-    left: 15px;
-    z-index: 1;
+    left: 0;
+    z-index: 3;
 
-    &.filter-menu-content-active-country {
-      display: block;
-    }
-    &.filter-menu-content-active-age {
-      display: block;
-    }
-    &.filter-menu-content-active-language {
+    &.filter-menu-content-active {
       display: block;
     }
 
@@ -1092,6 +1200,7 @@ img {
 
 .filter-content {
   .grid {
+    // min-height: 505px;
     margin: 45px auto 0;
 
     .element-item {
@@ -1099,7 +1208,233 @@ img {
     }
   }
 }
+.school-video-section {
+  .video-wrapper {
+    & > video {
+      width: 100%;
+      margin-top: -2%;
+      height: 100%;
+    }
+  }
+}
+.individual-school-video-section {
+  .video-wrapper {
+    & > video {
+      width: 100%;
+      margin-top: -2%;
+      height: 100%;
+    }
+  }
+}
 
+.poster-school-section {
+  .position-school-content {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    .col-md-6 {
+      padding: 0 5px;
+    }
+  }
+
+  .download-block {
+
+    .download-btn {
+      width: 100%;
+
+      .fa {
+        margin: 0 15px 0 15px;
+      }
+    }
+  }
+
+  .school-description-block,
+  .recomendation-block {
+    float: left;
+    width: 47%;
+    height: 670px;
+    max-height: 670px;
+    overflow: hidden;
+    margin: 20px 15px;
+    padding: 30px 35px;
+
+    .description-title {
+      margin: 0 auto 15px;
+    }
+
+    .description-text {
+      max-height: 550px;
+      overflow: hidden;
+    }
+
+    .recomendation-list {
+      max-height: 550px;
+      overflow: hidden;
+      li {
+        margin: 25px auto;
+      }
+    }
+  }
+}
+
+.interesting-school-list {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.14);
+  background-color: #f2eeeb;
+
+  .title {
+    margin: 50px auto 40px;
+    text-align: center;
+    color: #370909;
+    font: 400 25px / 30px $OpenSans;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .school-item {
+    .item-thubnail {
+      width: 100%;
+      max-width: 305px;
+      max-height: 185px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .owerflow-width-wrapper {
+      overflow: hidden;
+      padding: 0 20px;
+      background-color: #ffffff;
+    }
+
+    .name-of-school {
+      margin: 20px 0;
+      color: #6c6460;
+      text-align: left;
+      font: 700 22px / 24px $OpenSans;
+    }
+
+    .characteristics-list {
+      li {
+        overflow: hidden;
+        display: block;
+        margin: 10px auto;
+
+        .icon-wrapper {
+          float: left;
+          min-width: 17px;
+          margin: 0 15px 0 0;
+
+          .fa {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #6c6460;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23px;
+          }
+        }
+
+        .description {
+          overflow: hidden;
+          p {
+            text-align: left;
+            color: #6c6460;
+            font: 400 18px / 22px $OpenSans;
+          }
+        }
+      }
+    }
+
+    .school-more {
+      display: block;
+      float: right;
+      margin: 10px 0 20px;
+      color: #6c6460;
+      font: 600 16px / 20px $OpenSans;
+      @include transition;
+
+      &:hover {
+        color: #ffad0a;
+      }
+    }
+  }
+}
+
+.poster-school-section {
+  .download-block {
+    padding: 0 15px;
+    .download-btn {
+      width: 100%;
+
+      .fa {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.interesting-individuals-school-list {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.14);
+  background-color: #f2eeeb;
+
+  .title {
+    margin: 50px auto 40px;
+    text-align: center;
+    color: #370909;
+    font: 400 25px / 30px $OpenSans;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .school-item {
+    width: 100%;
+    max-height: 205px;
+    margin: 1% 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    .item-thubnail {
+      min-width: 445px;
+      width: 445px;
+      min-height: 204px;
+      height: 204px;
+      overflow: hidden;
+      float: left;
+      margin: 0 25px 0 0;
+
+      img {
+        width: 445px;
+        min-height: 205px;
+      }
+    }
+    .owerflow-width-wrapper {
+      padding: 0 20px 0 0;
+      .name-of-school {
+        margin: 10px 0;
+      }
+      .school-more {
+        margin: 0;
+      }
+    }
+  }
+}
 
 }
 @media (min-width: 1200px) {
@@ -1138,6 +1473,11 @@ img {
 
   }
 }
+.individual-program-description-section {
+  .row {
+    padding: 0 15px;
+  }
+}
 }
 @media (min-width: 1440px) {
   .inside-section-content{
@@ -1146,5 +1486,10 @@ img {
         width: 55%;
       }
     }
+  }
+}
+@media (min-width: 1680px) {
+  .order-call {
+    right: 25%;
   }
 }

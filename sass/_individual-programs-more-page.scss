@@ -1,0 +1,166 @@
+.individual-programs-poster {
+      width: 100%;
+      margin: 15px auto 0;
+      div {
+            padding: 0;
+      }
+      .poster-wrapper {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+
+            img {
+                  width: auto;
+                  position: relative;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  height: 205px;
+            }
+      }
+}
+
+.individual-program-description-section {
+      .description {
+            margin: 20px auto;
+
+            p {
+                  color: #6c6460;
+                  font-family: "Open Sans";
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 25px;
+                  text-align: justify;
+                  word-break: break-all;
+            }
+      }
+}
+
+.individual-school-video-section	{
+      .video-wrapper {
+            position: relative;
+            max-width: 975px;
+            height: 280px;
+            margin: 0 auto;
+
+
+            .poster-img {
+                  position: relative;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 1;
+                  background-image: url("../images/individual-programs-video-poster.jpg");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+            }
+      }
+
+      .video-wrapper > video {
+            width: 100%;
+            margin-top: -10%;
+      }
+      .video-wrapper > video[poster]{
+      }
+
+      .video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+            display: none;
+      }
+
+      .video-overlay-play-button {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding: 10px calc(50% - 50px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.45);
+            transition: opacity 150ms;
+            z-index: 3;
+      }
+
+      .video-overlay-play-button:hover {
+            opacity: 1;
+      }
+
+      .video-overlay-play-button.is-hidden {
+            display: none;
+      }
+}
+.interesting-individuals-school-list {
+      .school-item {
+            .item-thubnail {
+                  width: 100%;
+                  max-width: 320px;
+                  max-height: 200px;
+                  overflow: hidden;
+
+                  img {
+                        width: 100%;
+                  }
+            }
+
+            .owerflow-width-wrapper {
+                  overflow: hidden;
+                  padding: 0 20px;
+                  margin: 0 auto;
+            }
+
+            .name-of-school {
+                  margin: 20px 0;
+                  color: #6c6460;
+                  text-align: left;
+                  font: 700 22px / 24px $OpenSans;
+            }
+
+            .characteristics-list {
+                  li {
+                        overflow: hidden;
+                        display: block;
+                        margin: 10px auto;
+
+                        .icon-wrapper {
+                              float: left;
+                              min-width: 17px;
+                              margin: 0 15px 0 0;
+
+                              .fa {
+                                    display: block;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    color: #6c6460;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    line-height: 23px;
+                              }
+                        }
+
+                        .description {
+                              overflow: hidden;
+                              p {
+                                    text-align: left;
+                                    color: #6c6460;
+                                    font: 400 18px / 22px $OpenSans;
+                              }
+                        }
+                  }
+            }
+
+            .school-more {
+                  display: block;
+                  float: right;
+                  margin: 10px 0 20px;
+                  color: #6c6460;
+                  font: 600 16px / 20px $OpenSans;
+                  @include transition;
+
+                  &:hover {
+                        color: #ffad0a;
+                  }
+            }
+      }
+}

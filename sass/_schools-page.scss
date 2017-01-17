@@ -7,7 +7,7 @@
 	.filter-block {
 		position: absolute;
 		width: 100%;
-		min-width: 320px;
+		min-width: 98vw;
 		background-color: #ede9e6;
 		top: 32px;
 		left: 0;
@@ -64,6 +64,7 @@
 				background-color: #370909;
 				display: none;
 
+
 				&.filter-menu-content-active {
 					display: block;
 				}
@@ -89,6 +90,8 @@
 			.owerflow-width-wrapper {
 				overflow: hidden;
 				padding: 0 20px;
+				max-width: 320px;
+				margin: 0 auto;
 			}
 
 			.name-of-school {

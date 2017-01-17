@@ -76,6 +76,14 @@ License URI: LICENSE
 	--------------------------------------------------------------*/
 	@import "school-more-page";
 	/*--------------------------------------------------------------
+	# individual programs page
+	--------------------------------------------------------------*/
+	@import "individual-programs-page";
+	/*--------------------------------------------------------------
+	# individual programs more page
+	--------------------------------------------------------------*/
+	@import "individual-programs-more-page";
+	/*--------------------------------------------------------------
 	# media styles
 	--------------------------------------------------------------*/
 	@import "media";
@@ -158,4 +166,8 @@ a {
 .container {
 	overflow: hidden;
 	box-sizing: border-box;
+}
+
+.filter-block {
+	overflow: initial;
 }
