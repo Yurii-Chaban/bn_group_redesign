@@ -3,6 +3,13 @@ header {
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.22);
 	background-color: #ffffff;
 
+	@media (max-width: 980px) {
+		.customize-container {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
 	.navbar {
 		height: 60px;
 		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
@@ -172,8 +179,17 @@ header {
 	.search-block {
 		width: 288px;
 		overflow: hidden;
-		margin: 0 auto;
+		position: relative;
+		margin: 0;
 		display: none;
+		top: -580px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 999999;
+
+		@media (min-width: 768px) {
+			top: -710px;
+		}
 		.search-text {
 			display: block;
 			float: left;
