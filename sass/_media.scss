@@ -457,7 +457,7 @@
       float: left;
       width: 125px;
       height: 145px;
-      margin: 5px auto 0;
+      margin: 0 auto 0;
       overflow: hidden;
     }
     .navbar {
@@ -967,7 +967,7 @@ footer {
   .title {
     padding: 0;
     h2 {
-      margin: 30px auto 5px;
+      margin: 24px auto 5px;
       text-align: left;
       font-size: 25px;
       line-height: 30px;
@@ -1025,8 +1025,8 @@ img {
 .inside-section-content {
   width: 100%;
   .custom-breadcrumb {
-    margin-bottom: 30px;
-    padding: 20px 0;
+    margin-bottom: 18px;
+    padding: 15px 0 20px;
 
     div {
       padding: 0;
@@ -1044,7 +1044,7 @@ img {
     }
   }
   .site-navigation {
-    margin-top: 30px;
+    margin-top: 23px;
   }
 
   .founders-list {
@@ -1241,7 +1241,7 @@ img {
 .filter-content {
   .grid {
     // min-height: 505px;
-    margin: 45px auto 0;
+    margin: 14px auto 0;
 
     .element-item {
       border: 1px solid #f2eeeb;
@@ -1296,11 +1296,12 @@ img {
     height: 670px;
     max-height: 670px;
     overflow: hidden;
-    margin: 20px 15px;
-    padding: 30px 35px;
+    margin: 34px 15px 20px;
+    padding: 16px 20px 30px;
 
     .description-title {
-      margin: 0 auto 15px;
+      font-size: 25px;
+      margin: 7px auto 22px;
     }
 
     .description-text {
@@ -1317,6 +1318,11 @@ img {
     }
   }
 }
+.school-description-block {
+  .description-text {
+    padding-left: 15px;
+  }
+}
 
 .interesting-school-list {
   position: relative;
@@ -1326,7 +1332,7 @@ img {
   background-color: #f2eeeb;
 
   .title {
-    margin: 50px auto 40px;
+    margin: 45px auto 40px;
     text-align: center;
     color: #370909;
     font: 400 25px / 30px $OpenSans;
@@ -1356,7 +1362,7 @@ img {
     }
 
     .name-of-school {
-      margin: 20px 0;
+      margin: 15px 0;
       color: #6c6460;
       text-align: left;
       font: 700 22px / 24px $OpenSans;
@@ -1366,7 +1372,7 @@ img {
       li {
         overflow: hidden;
         display: block;
-        margin: 10px auto;
+        margin: 8px auto;
 
         .icon-wrapper {
           float: left;
@@ -1398,7 +1404,7 @@ img {
     .school-more {
       display: block;
       float: right;
-      margin: 10px 0 20px;
+      margin: 0 0 15px;
       color: #6c6460;
       font: 600 16px / 20px $OpenSans;
       @include transition;
@@ -1412,6 +1418,7 @@ img {
 
 .poster-school-section {
   .download-block {
+    margin: 20px 0 0;
     padding: 0 15px;
     .download-btn {
       width: 100%;
@@ -1472,6 +1479,163 @@ img {
       .school-more {
         margin: 0;
       }
+    }
+  }
+}
+
+.school-more-slider {
+  .custom-container-width {
+    max-width: 1080px;
+    .slider-container {
+      width: 495px;
+      .swiper-button-prev {
+        left: -50%;
+      }
+      .swiper-button-next {
+        right: -50%;
+      }
+      .swiper-slide {
+        .img-wrapper {
+          width: 495px;
+          height: 330px;
+
+          img {
+            min-width: 495px;
+            min-height: 330px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.school-video-section {
+  width: 100%;
+  margin: 0 auto;
+
+  .video-wrapper {
+    height: 455px;
+    margin: 23px auto 0;
+  }
+}
+
+.filter-block {
+  .filter-section {
+    margin: 57px auto 0;
+  }
+}
+.filter-content {
+  .grid{
+   &.individual-programs {
+    .element-item {
+      margin: 10px auto 24px;
+      .item-thubnail {
+        min-width: 528px;
+        width: 528px;
+
+        img {
+          width: 538px;
+        }
+      }
+      .owerflow-width-wrapper {
+        max-width: 380px;
+      }
+    }
+  }
+}
+}
+.individual-programs-poster {
+  margin: 0 auto;
+}
+.individual-program-description-section {
+  padding: 28px 0 0;
+
+  .description {
+    margin: 0 auto 5px;
+  }
+}
+.individual-school-video-section {
+  margin: 20px auto 0;
+  .video-wrapper {
+    height: 457px;
+    margin: 7px auto 0;
+  }
+}
+.interesting-individuals-school-list {
+  .row {
+    padding: 0 15px;
+  }
+  .title {
+    margin: 37px auto 30px;
+  }
+  .school-item {
+    margin: 0;
+
+    &:nth-of-type(1) {
+      margin: 8px auto 35px;
+    }
+    .item-thubnail {
+      min-width: 545px;
+      width: 545px;
+
+      img {
+        width: 545px;
+      }
+    }
+  }
+}
+.press-center-articles-list {
+  margin: 0 auto;
+
+  .row {
+    padding: 0 15px;
+  }
+
+  .press-center-article-item {
+    max-height: 363px;
+    padding: 20px 0 0;
+
+    .article-img-wrapper {
+      width: 250px;
+    }
+    .article-content {
+      padding: 0 0 0 20px;
+      .name-of-article {
+        margin: -3px 0 0;
+      }
+      .date-of-article {
+        margin: 10px 0 11px;
+      }
+      .description-of-article {
+        height: 102px;
+      }
+    }
+    .more-btn-content {
+      margin: 20px 0 6px;
+      padding: 0 1px 0;
+
+      &:before {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+.helpful-article-list {
+  margin-top: 37px;
+  .overflow-content {
+    max-width: 370px;
+    .article-title {
+      margin: 2px 0 0;
+    }
+    .article-date {
+      margin: 5px 0 22px;
+    }
+    .article-content {
+      height: 130px;
+    }
+    .article-more {
+      margin: 30px 0 0;
     }
   }
 }

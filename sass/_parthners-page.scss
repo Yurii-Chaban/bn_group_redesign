@@ -28,8 +28,13 @@
 			min-width: 220px;
 			min-height: 220px;
 			overflow: hidden;
+			position: relative;
 
 			.img-responsive {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 				margin: 0 auto;
 				text-align: center;
 				@include transition;
